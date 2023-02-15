@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>[Module Study Area 2022/2023] CMM007 - Full Time / Part Time: Recording Lecture on Application Design</title>
+    <link rel="shortcut icon" href="https://campusmoodle.rgu.ac.uk/theme/image.php/fordson/theme/1675777632/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, [Module Study Area 2022/2023] CMM007 - Full Time / Part Time: Recording Lecture on Application Design" />
+<link rel="stylesheet" type="text/css" href="https://campusmoodle.rgu.ac.uk/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://campusmoodle.rgu.ac.uk/theme/styles.php/fordson/1675777632_1662568214/all" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/campusmoodle.rgu.ac.uk","sesskey":"6xKaFA7M9r","themerev":"1675777632","slasharguments":1,"theme":"fordson","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1675777632","admin":"admin","svgicons":true,"usertimezone":"Europe\/London","contextid":6258254};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/campusmoodle.rgu.ac.uk\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/campusmoodle.rgu.ac.uk\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/campusmoodle.rgu.ac.uk\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/campusmoodle.rgu.ac.uk\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/campusmoodle.rgu.ac.uk\/theme\/yui_combo.php?m\/1675777632\/","combine":true,"comboBase":"https:\/\/campusmoodle.rgu.ac.uk\/theme\/yui_combo.php?","ext":false,"root":"m\/1675777632\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_customcert-rearrange":{"requires":["dd-delegate","dd-drag"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-mod_scheduler-limitchoices":{"requires":["base","node","event"]},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-beautify":{},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_panoptobutton-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_teamsmeeting-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-tinymce_mathslate-snippeteditor":{"requires":["json"]},"moodle-tinymce_mathslate-textool":{"requires":["dd-drag","dd-proxy","dd-drop","event","json"]},"moodle-tinymce_mathslate-editor":{"requires":["dd-drag","dd-proxy","dd-drop","event","tabview","io-base","json","moodle-tinymce_mathslate-textool","moodle-tinymce_mathslate-mathjaxeditor"]},"moodle-tinymce_mathslate-dialogue":{"requires":["escape","moodle-local_mathslate-editor","moodle-tinymce_mathslate-editor"]},"moodle-tinymce_mathslate-mathjaxeditor":{"requires":["moodle-tinymce_mathslate-snippeteditor","dd-drop"]}}},"gallery":{"name":"gallery","base":"https:\/\/campusmoodle.rgu.ac.uk\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/campusmoodle.rgu.ac.uk\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1675777632\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/campusmoodle.rgu.ac.uk\/lib\/javascript.php\/1675777632\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/campusmoodle.rgu.ac.uk\/lib\/javascript.php\/1675777632\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.8\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<meta name="google-site-verification" content="1-8oJYDzuHl0cqSJvnJFFXPCRTFmuqJRX8bUNMDrU-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--- temp code ---> 
+</head>
+
+<body  id="page-mod-url-view" class="format-topcoll  path-mod path-mod-url chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam campusmoodle-rgu-ac-uk pagelayout-incourse course-102060 context-6258254 cmid-4535125 category-3 ">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script type="text/javascript" src="https://campusmoodle.rgu.ac.uk/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script type="text/javascript" src="https://campusmoodle.rgu.ac.uk/theme/jquery.php/core/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://campusmoodle.rgu.ac.uk/lib/javascript.php/1675777632/lib/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <nav class="fixed-top navbar navbar-fhs  navbar-student navbar-expand moodle-has-zindex">
+            <div data-region="drawer-toggle" class="d-inline-block mr-3">
+                <button aria-expanded="false" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><i class="icon fa fa-bars fa-fw " aria-hidden="true"  ></i><span class="sr-only">Side panel</span></button>
+            </div>
+    
+            <a href="https://campusmoodle.rgu.ac.uk" class="navbar-brand 
+                    d-none d-sm-inline
+                    ">
+    		
+     
+                    <span class="logo d-none d-sm-inline">
+                        <img src="https://campusmoodle.rgu.ac.uk/theme/fordson/pix_rgu/logo-small.png" alt="CampusMoodle" style="width:190px;">
+    		<img class="rgu_tef" src="https://campusmoodle.rgu.ac.uk/theme/fordson/pix_rgu/TEFgold-h41.jpg" title="RGU awarded Gold rating in the Teaching Excellence Framework" />
+    
+                    </span>
+            </a>
+       	<div id="rgu_persistent_menu_container">
+    		<ul id="rgu_persistent_menu"><li><a href="#"><span class="rgu_quicklinks"><i class="fa fa-sitemap"></i></span></a><ul><li><a href="https://campusmoodle.rgu.ac.uk/course/view.php?id=94231">WELCOME</a></li><li><a href="https://campusmoodle.rgu.ac.uk/course/view.php?id=94229">SUPPORT</a></li></ul></li></ul> 
+    	</div>
+    
+    
+    
+    
+    		<div class="coursecontrols nav-item d-flex">
+    		<div class="rgu_home_icon"> 
+    			<a href="https://campusmoodle.rgu.ac.uk" 
+    				<a href="https://campusmoodle.rgu.ac.uk"><img src="https://campusmoodle.rgu.ac.uk/theme/fordson/pix_rgu/logo-mobile.png" alt="Robert Gordon University logo: link to University home page" class="rgu_mobile_logo" /></a> 
+    			</a> 
+    		</div> 
+           			<div class="studentdash nav-item nav-link">
+        <a role="button" data-tooltip="tooltip" data-placement= "bottom" title="Study Area Dashboard" data-toggle="modal" href="#studentdashslider" class="btn btn-secondary fhs-tooltip"><i class="fa fa-cogs" aria-hidden="true"></i></a>
+    </div>
+
+
+<!--    <div class="editcogbutton"><div class="pull-xs-right context-header-settings-menu"></div></div> --> 
+                			 
+            		 
+    			</div>
+    
+    
+            
+            <!-- course_controls -->
+            <ul class="navbar-nav d-none d-md-flex">
+                <!-- custom_menu -->  
+                
+                
+                <!-- page_heading_menu --> 
+                
+            </ul>
+            <ul class="nav navbar-nav ml-auto">
+                <div class="d-none d-lg-block">
+                
+            </div>
+                <!-- navbar_plugin_output -->
+    		
+    	
+    
+                <li class="nav-item">
+                <div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="342862"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        role="button"
+        aria-controls="popover-region-container-63ecaa865bd7063ecaa865a6342"
+        aria-haspopup="true"
+        aria-label="Show notification window with no new notifications"
+        tabindex="0">
+                <i class="icon fa fa-bell fa-fw "  title="Toggle notifications menu" aria-label="Toggle notifications menu"></i>
+        <div class="count-container hidden" data-region="count-container"
+        aria-label="There are 0 unread notifications">0</div>
+
+    </div>
+    <div 
+        id="popover-region-container-63ecaa865bd7063ecaa865a6342"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Notification window"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button"
+           href="#"
+           title="Mark all as read"
+           data-action="mark-all-read"
+           role="button">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw "  title="Mark all as read" aria-label="Mark all as read"></i></span>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Loading" aria-label="Loading"></i></span>
+        </a>
+        <a href="https://campusmoodle.rgu.ac.uk/message/notificationpreferences.php?userid=342862"
+           title="Notification preferences">
+            <i class="icon fa fa-cog fa-fw "  title="Notification preferences" aria-label="Notification preferences"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">You have no notifications</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Loading" aria-label="Loading"></i></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://campusmoodle.rgu.ac.uk/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div>
+                </li>
+                <!-- user_menu -->
+                <li class="nav-item d-flex align-items-center">
+                    <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items d-inline" id="action-menu-2" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-2-menubar" role="menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown">
+                        <a href="#" tabindex="0" class=" dropdown-toggle icon-no-margin" id="dropdown-2" aria-label="User menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="action-menu-2-menu">
+                            
+                            <span class="userbutton"><span class="usertext mr-1">JOY SHANGOTOLA (2218979)</span><span class="avatars"><span class="avatar current"><img src="https://campusmoodle.rgu.ac.uk/pluginfile.php/6033952/user/icon/fordson/f2?rev=1" class="userpicture" width="35" height="35" role="presentation" aria-hidden="false" /></span></span></span>
+                                
+                            <b class="caret"></b>
+                        </a>
+                            <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-2-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-2" role="menu" data-align="tr-br" id="dropdown-menu-2">
+                                        <a href="https://campusmoodle.rgu.ac.uk/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1">
+                                                <i class="icon fa fa-tachometer fa-fw " aria-hidden="true"  ></i>
+                                            <span class="menu-action-text" id="actionmenuaction-1">
+                                                Dashboard
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                        <a href="https://campusmoodle.rgu.ac.uk/user/profile.php?id=342862" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2">
+                                                <i class="icon fa fa-user fa-fw " aria-hidden="true"  ></i>
+                                            <span class="menu-action-text" id="actionmenuaction-2">
+                                                Profile
+                                            </span>
+                                        </a>
+                                        <a href="https://campusmoodle.rgu.ac.uk/user/profile.php" class="dropdown-item menu-action" role="menuitem" data-title="View-profile" aria-labelledby="actionmenuaction-3">
+                                                <i class="icon fa fa-user fa-fw " aria-hidden="true"  ></i>
+                                            <span class="menu-action-text" id="actionmenuaction-3">
+                                                View profile
+                                            </span>
+                                        </a>
+                                        <a href="https://campusmoodle.rgu.ac.uk/user/edit.php" class="dropdown-item menu-action" role="menuitem" data-title="Edit-profile" aria-labelledby="actionmenuaction-4">
+                                                <i class="icon fa fa-cog fa-fw " aria-hidden="true"  ></i>
+                                            <span class="menu-action-text" id="actionmenuaction-4">
+                                                Edit profile
+                                            </span>
+                                        </a>
+                                        <a href="https://campusmoodle.rgu.ac.uk/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5">
+                                                <i class="icon fa fa-wrench fa-fw " aria-hidden="true"  ></i>
+                                            <span class="menu-action-text" id="actionmenuaction-5">
+                                                Preferences
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                        <a href="https://campusmoodle.rgu.ac.uk/login/logout.php?sesskey=6xKaFA7M9r" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
+                                                <i class="icon fa fa-sign-out fa-fw " aria-hidden="true"  ></i>
+                                            <span class="menu-action-text" id="actionmenuaction-6">
+                                                Log out
+                                            </span>
+                                        </a>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div></div>
+                </li>
+            </ul>
+            <!-- search_box -->
+    </nav>
+    
+
+        <div class="headerbkg"><div class="default" style="background-image: url(&quot;https://campusmoodle.rgu.ac.uk/theme/image.php/fordson/theme/1675777632/headerbg&quot;); background-size: cover; background-position:center;
+                width: 100%; height: 100%;"></div></div>
+
+    <div id="page" class="container-fluid">
+        
+        <div id="learningcontent">
+              
+            <div class="modal fade" id="studentdashslider" tabindex="-1" role="dialog" aria-labelledby="teacherdashslider" aria-hidden="true">
+<div class="modal-dialog" role="document">
+
+    <div class="modal-content">
+    <div class="modal-body">
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+        <div class="studentdashboard">
+        <div class="container-fluid">
+        
+            <div class="row">
+                    <div class="col-md-3 activitylinks">
+                        <div class="dashtitle">
+                            <h3><i class="fa fa-check-square-o dashicon"></i>Activities</h3>     
+                        </div>
+                        <div class="list-group">
+                            <div class="list-group" aria-labelledby="list-group-63ecaa865dcb463ecaa865a63411">
+        <a href="https://campusmoodle.rgu.ac.uk/mod/forum/index.php?id=102060"class="list-group-item" >Forums</a>
+        <a href="https://campusmoodle.rgu.ac.uk/course/resources.php?id=102060"class="list-group-item" >Resources</a>
+        <a href="https://campusmoodle.rgu.ac.uk/mod/zoom/index.php?id=102060"class="list-group-item" >Zoom Meetings</a>
+ </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+        </div>
+
+    </div>
+    </div>
+
+</div>
+</div>
+
+<div style="clear:both;"></div>
+            <header id="page-header" class="row">
+    <div class="col-12 pt-3 pb-3">
+        <div class="card ">
+            <div class="card-body ">
+                <div class="d-flex">
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div id="page-navbar">
+                        <span class="accesshide" id="navbar-label">Page path</span><nav aria-labelledby="navbar-label"><ul class="breadcrumb"><li class="breadcrumb-item"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://campusmoodle.rgu.ac.uk/my/"><span itemprop="title">My Moodle</span></a></span></li><li class="breadcrumb-item"> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" title="[Module 2022/2023] CMM007 - Full Time / Part Time: Intranet Systems Development" href="https://campusmoodle.rgu.ac.uk/course/view.php?id=102060"><span itemprop="title">[Module Study Area 2022/2023] CMM007 - Full Time / Part Time</span></a></span></li><li class="breadcrumb-item"> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://campusmoodle.rgu.ac.uk/course/view.php?id=102060#topic-8"><span itemprop="title">Session 6 - Application Design</span></a></span></li><li class="breadcrumb-item"> <a href="https://campusmoodle.rgu.ac.uk/mod/url/view.php?id=4535125" id="action_link63ecaa865a63412" class="" >Recording Lecture on Application Design</a></li></ul></nav>
+			 
+                    </div>
+                    <div class="ml-auto d-flex">
+                        
+                    </div>
+                    <div id="course-header">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+            
+            <div id="page-content" class="row pb-3">
+                <div id="region-main-box" class="col-12">
+                    
+                    <section id="region-main" >
+
+                                
+                                <span class="notifications" id="user-notifications"></span>
+                                
+                                
+                                <div role="main"><span id="maincontent"></span><h2>Recording Lecture on Application Design</h2><div id="urlintro" class="box mod_introbox py-3"><div class="no-overflow"><p> Passcode: 10S@vd9a</p></div></div><div class="urlworkaround">Click <a href="https://rgu-ac-uk.zoom.us/rec/share/nyVEezlqnLkrU3GXE2LtQGhPcMhCYWXzSodKDWO1buvaRdNctJnY_BiZyCUSHfdM.8f3xp7F9Lx7Cs_UV?startTime=1676399758000" onclick="this.target='_blank';">https://rgu-ac-uk.zoom.us/rec/share/nyVEezlqnLkrU3GXE2LtQGhPcMhCYWXzSodKDWO1buvaRdNctJnY_BiZyCUSHfdM.8f3xp7F9Lx7Cs_UV?startTime=1676399758000</a> link to open resource.</div></div>
+                                
+
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+        <div id="nav-drawer" data-region="drawer" class="d-print-none moodle-has-zindex closed" aria-hidden="true" tabindex="-1">
+            <nav class="list-group">
+                <a class="list-group-item list-group-item-action " href="https://campusmoodle.rgu.ac.uk/course/view.php?id=102060" data-key="coursehome" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" >
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">[Module Study Area 2022/2023] CMM007 - Full Time / Part Time</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action " href="https://campusmoodle.rgu.ac.uk/user/index.php?id=102060" data-key="participants" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="90" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="102060">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-users fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">Participants</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action " href="https://campusmoodle.rgu.ac.uk/course/view.php?id=102060#topic-0" data-key="1669931" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="102060">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">Topic</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action " href="https://campusmoodle.rgu.ac.uk/course/view.php?id=102060#topic-1" data-key="1669932" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="102060">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">Assessment Information</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action " href="https://campusmoodle.rgu.ac.uk/course/view.php?id=102060#topic-2" data-key="1669933" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="102060">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">Additional Resources</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action " href="https://campusmoodle.rgu.ac.uk/course/view.php?id=102060#topic-3" data-key="1669934" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="102060">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">Session 1 - Introduction</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action " href="https://campusmoodle.rgu.ac.uk/course/view.php?id=102060#topic-4" data-key="1669935" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="102060">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">Session 2 - HTML</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action " href="https://campusmoodle.rgu.ac.uk/course/view.php?id=102060#topic-5" data-key="1669936" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="102060">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">Session 3 - CSS</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action " href="https://campusmoodle.rgu.ac.uk/course/view.php?id=102060#topic-6" data-key="1669937" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="102060">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">Session 4 - How Browser Works</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action " href="https://campusmoodle.rgu.ac.uk/course/view.php?id=102060#topic-7" data-key="1669938" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="102060">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">Session 5 - JavaScript and Frameworks</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action active" href="https://campusmoodle.rgu.ac.uk/course/view.php?id=102060#topic-8" data-key="1669943" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="1" data-hidden="0" data-preceedwithhr="0" data-parent-key="102060">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body font-weight-bold">Session 6 - Application Design</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action " href="https://campusmoodle.rgu.ac.uk/course/view.php?id=102060#topic-9" data-key="1669939" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="102060">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">Session 7 - Introduction to PHP</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action " href="https://campusmoodle.rgu.ac.uk/course/view.php?id=102060#topic-10" data-key="1669940" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="102060">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">Session 8 - More PHP</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action " href="https://campusmoodle.rgu.ac.uk/course/view.php?id=102060#topic-11" data-key="1669941" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="102060">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">Session 9 - Databases</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action " href="https://campusmoodle.rgu.ac.uk/course/view.php?id=102060#topic-12" data-key="1669942" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="102060">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">Session 10 - Scalability + Security</span>
+                        </div>
+                    </div>
+                </a>
+            </nav>
+            <nav class="list-group m-t-1">
+                <a class="list-group-item list-group-item-action " href="https://campusmoodle.rgu.ac.uk/my/" data-key="myhome" data-isexpandable="0" data-indent="0" data-showdivider="1" data-type="1" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" >
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-tachometer fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">My Moodle</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action " href="https://campusmoodle.rgu.ac.uk/?redirect=0" data-key="home" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="myhome">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-home fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">Site home</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action " href="https://campusmoodle.rgu.ac.uk/calendar/view.php?view=month&amp;course=102060" data-key="calendar" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-calendar fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">CampusMoodle Calendar</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action " href="https://campusmoodle.rgu.ac.uk/course/view.php?id=74268" data-key="portfolio" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder-open fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">My Portfolio</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action " href="https://you.rgu.ac.uk/" data-key="intranet" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-external-link fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">RGyoU Portal</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action " href="https://www.rgu.ac.uk/" data-key="rguwebsite" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-globe fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body ">RGU Homepage</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="list-group-item" data-key="mycourses" data-isexpandable="1" data-indent="0" data-showdivider="0" data-type="0" data-nodetype="0" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="myhome">
+                    <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="media-body">My courses</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+    
+    <footer id="page-footer" class="py-3 text-light">
+        <div class="container">
+    
+            <div id="course-footer"></div> 
+    
+            <div class="row">
+    
+                    <div class="col-md-4 align-top">
+                      	<div class="rgu_logo_footer"> <a href=""><img src="https://campusmoodle.rgu.ac.uk/theme/fordson/pix_rgu/logo_footer.svg" alt="Robert Gordon University logo: link to University home page" 0="class" 1="rgu_home_icon" /></a> </div>
+    			<div> <p><a href="https://campusmoodle.rgu.ac.uk/public/policy/policy.html" target="_blank">User Policy</a>, <a href="https://campusmoodle.rgu.ac.uk/public/policy/policy.html" target="_blank">Data Protection</a> and <a href="https://campusmoodle.rgu.ac.uk/public/policy/accessibility.html" target="_blank">Accessibility</a></p>  </div>
+    			<div> © 2023 <a href="//www.rgu.ac.uk" target="_blank">Robert Gordon University.</a> All rights reserved. </div> 
+                    </div>
+    
+                    <div class="col-md-4 text-center align-top">
+                     	<h4> STAY CONNECTED </h4>   
+    			<div class="socials_wrapper">
+        <ul class="socials">
+                    <a href = https://www.facebook.com/robertgordonuniversity/ class = "socialicon blog" title = "https://www.facebook.com/robertgordonuniversity/" alt="https://www.facebook.com/robertgordonuniversity/" target="_blank">
+                    <span class="fa-stack fa-1x">
+                    <i class="fa fa-square fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-inverse fa-stack-1x"></i>
+                    </span>
+                    <span class="sr-only">https://www.facebook.com/robertgordonuniversity/</span>
+                    </a>
+                    <a href = http://twitter.com/RobertGordonUni class = "socialicon blog" title = "http://twitter.com/RobertGordonUni" alt="http://twitter.com/RobertGordonUni" target="_blank">
+                    <span class="fa-stack fa-1x">
+                    <i class="fa fa-square fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-inverse fa-stack-1x"></i>
+                    </span>
+                    <span class="sr-only">http://twitter.com/RobertGordonUni</span>
+                    </a>
+                    <a href = https://www.linkedin.com/company/robert-gordon-university class = "socialicon blog" title = "https://www.linkedin.com/company/robert-gordon-university" alt="https://www.linkedin.com/company/robert-gordon-university" target="_blank">
+                    <span class="fa-stack fa-1x">
+                    <i class="fa fa-square fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-inverse fa-stack-1x"></i>
+                    </span>
+                    <span class="sr-only">https://www.linkedin.com/company/robert-gordon-university</span>
+                    </a>
+                    <a href = https://www.flickr.com/photos/robertgordonuni/ class = "socialicon blog" title = "https://www.flickr.com/photos/robertgordonuni/" alt="https://www.flickr.com/photos/robertgordonuni/" target="_blank">
+                    <span class="fa-stack fa-1x">
+                    <i class="fa fa-square fa-stack-2x"></i>
+                    <i class="fa fa-flickr fa-inverse fa-stack-1x"></i>
+                    </span>
+                    <span class="sr-only">https://www.flickr.com/photos/robertgordonuni/</span>
+                    </a>
+                    <a href = www.rgu.ac.uk class = "socialicon blog" title = "www.rgu.ac.uk" alt="www.rgu.ac.uk" target="_blank">
+                    <span class="fa-stack fa-1x">
+                    <i class="fa fa-square fa-stack-2x"></i>
+                    <i class="fa fa-globe fa-inverse fa-stack-1x"></i>
+                    </span>
+                    <span class="sr-only">www.rgu.ac.uk</span>
+                    </a>
+                    <a href = https://www.rgu.ac.uk/news class = "socialicon blog" title = "https://www.rgu.ac.uk/news" alt="https://www.rgu.ac.uk/news" target="_blank">
+                    <span class="fa-stack fa-1x">
+                    <i class="fa fa-square fa-stack-2x"></i>
+                    <i class="fa fa-home fa-inverse fa-stack-1x"></i>
+                    </span>
+                    <span class="sr-only">https://www.rgu.ac.uk/news</span>
+                    </a>
+        </ul>
+    </div>
+    
+    
+    		
+                    </div>
+     
+                    <div class="col-md-4 align-top">
+                           <h4>CONTACT</h4><div class="rgu_contact">Garthdee House, Garthdee Road, Aberdeen AB10 7QB, Scotland, United Kingdom</div><div class="rgu_contact rgu_top_spacer">Phone: +44 (0)1224 26 2000</div> 
+    
+                    </div>    	
+    
+    	</div>
+           
+            
+            <script>
+                var ally_module_maps = {"file_resources":[],"assignment_files":[],"forum_files":[],"folder_files":[],"glossary_files":[],"lesson_files":[]};
+                var ally_section_maps = [];
+                var ally_annotation_maps = {"mod_page":{"intros":[],"content":{"4490423":"page:page:content:39224"}},"mod_book":{"intros":[],"chapters":[]},"mod_glossary":{"entries":[],"intros":[]},"mod_forum":{"posts":[],"intros":{"4230810":"forum:forum:intro:289887","4490391":"forum:forum:intro:303696"}},"mod_lesson":[],"block_html":{"1427821":"block_html:block_instances:configdata:1427821","1427822":"block_html:block_instances:configdata:1427822","1427823":"block_html:block_instances:configdata:1427823","1481421":"block_html:block_instances:configdata:1481421","1481423":"block_html:block_instances:configdata:1481423","1481424":"block_html:block_instances:configdata:1481424"}};
+            </script><script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://campusmoodle.rgu.ac.uk/lib/requirejs.php/1675777632/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://campusmoodle.rgu.ac.uk/lib/javascript.php/1675777632/lib/jquery/jquery-3.2.1.min',
+        jqueryui: 'https://campusmoodle.rgu.ac.uk/lib/javascript.php/1675777632/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://campusmoodle.rgu.ac.uk/lib/javascript.php/1675777632/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="https://campusmoodle.rgu.ac.uk/lib/javascript.php/1675777632/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["filter_ally/main"], function(amd) { amd.init("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzY0NTQ1MzQsImNvdXJzZV9pZCI6MTAyMDYwLCJyb2xlcyI6InVybjpsdGk6cm9sZTppbXNcL2xpc1wvTGVhcm5lciIsInVzZXJfaWQiOjM0Mjg2MiwibG9jYWxlIjoiZW4iLCJyZXR1cm5fdXJsIjoiaHR0cHM6XC9cL2NhbXB1c21vb2RsZS5yZ3UuYWMudWsifQ.Ve3I3wnAlp7CiPbGUd39FjdKOqxRH6xSIe8EJ5Lm__s", {"adminurl":"https:\/\/prod-eu-central-1.ally.ac\/api\/v1\/787\/lti\/institution","pushurl":"https:\/\/prod-eu-central-1.ally.ac\/api\/v1\/events","clientid":"787"}, false, true, "102060", {}); });;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://campusmoodle.rgu.ac.uk/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("en",{
+ "Audio Player": "Audio Player",
+ "Video Player": "Video Player",
+ "Play": "Play",
+ "Pause": "Pause",
+ "Replay": "Replay",
+ "Current Time": "Current Time",
+ "Duration Time": "Duration Time",
+ "Remaining Time": "Remaining Time",
+ "Stream Type": "Stream Type",
+ "LIVE": "LIVE",
+ "Loaded": "Loaded",
+ "Progress": "Progress",
+ "Progress Bar": "Progress Bar",
+ "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
+ "Fullscreen": "Fullscreen",
+ "Non-Fullscreen": "Non-Fullscreen",
+ "Mute": "Mute",
+ "Unmute": "Unmute",
+ "Playback Rate": "Playback Rate",
+ "Subtitles": "Subtitles",
+ "subtitles off": "subtitles off",
+ "Captions": "Captions",
+ "captions off": "captions off",
+ "Chapters": "Chapters",
+ "Descriptions": "Descriptions",
+ "descriptions off": "descriptions off",
+ "Audio Track": "Audio Track",
+ "Volume Level": "Volume Level",
+ "You aborted the media playback": "You aborted the media playback",
+ "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
+ "No compatible source was found for this media.": "No compatible source was found for this media.",
+ "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
+ "Play Video": "Play Video",
+ "Close": "Close",
+ "Close Modal Dialog": "Close Modal Dialog",
+ "Modal Window": "Modal Window",
+ "This is a modal window": "This is a modal window",
+ "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
+ ", opens captions settings dialog": ", opens captions settings dialog",
+ ", opens subtitles settings dialog": ", opens subtitles settings dialog",
+ ", opens descriptions settings dialog": ", opens descriptions settings dialog",
+ ", selected": ", selected",
+ "captions settings": "captions settings",
+ "subtitles settings": "subititles settings",
+ "descriptions settings": "descriptions settings",
+ "Text": "Text",
+ "White": "White",
+ "Black": "Black",
+ "Red": "Red",
+ "Green": "Green",
+ "Blue": "Blue",
+ "Yellow": "Yellow",
+ "Magenta": "Magenta",
+ "Cyan": "Cyan",
+ "Background": "Background",
+ "Window": "Window",
+ "Transparent": "Transparent",
+ "Semi-Transparent": "Semi-Transparent",
+ "Opaque": "Opaque",
+ "Font Size": "Font Size",
+ "Text Edge Style": "Text Edge Style",
+ "None": "None",
+ "Raised": "Raised",
+ "Depressed": "Depressed",
+ "Uniform": "Uniform",
+ "Dropshadow": "Dropshadow",
+ "Font Family": "Font Family",
+ "Proportional Sans-Serif": "Proportional Sans-Serif",
+ "Monospace Sans-Serif": "Monospace Sans-Serif",
+ "Proportional Serif": "Proportional Serif",
+ "Monospace Serif": "Monospace Serif",
+ "Casual": "Casual",
+ "Script": "Script",
+ "Small Caps": "Small Caps",
+ "Reset": "Reset",
+ "restore all settings to the default values": "restore all settings to the default values",
+ "Done": "Done",
+ "Caption Settings Dialog": "Caption Settings Dialog",
+ "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
+ "End of dialog window.": "End of dialog window."
+});
+
+    });
+});;
+function legacy_activity_onclick_handler_1(e) { e.halt(); window.open('https://campusmoodle.rgu.ac.uk/mod/url/view.php?id=4535125&redirect=1'); return false; };
+require(["report_allylti/main"], function(amd) { amd.init(); });;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+    require(['core/yui'], function(Y) {
+            Y.on('click', legacy_activity_onclick_handler_1, '#action_link63ecaa865a63412', null);
+    });
+;
+
+require(['theme_boost/loader']);
+require(['jquery','theme_boost/tooltip'], function($){$('[data-tooltip="tooltip"]').tooltip()});
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+;
+require(["filter_oembed/oembed"], function(amd) { amd.init(); });;
+require(["core/notification"], function(amd) { amd.init(6258254, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });;
+require(["core/page_global"], function(amd) { amd.init(); });
+});
+//]]>
+</script>
+<script type="text/javascript" src="https://campusmoodle.rgu.ac.uk/lib/javascript.php/1675777632/theme/fordson/javascript/scrolltotop.js"></script>
+<script type="text/javascript" src="https://campusmoodle.rgu.ac.uk/lib/javascript.php/1675777632/theme/fordson/javascript/scrollspy.js"></script>
+<script type="text/javascript" src="https://campusmoodle.rgu.ac.uk/lib/javascript.php/1675777632/theme/fordson/javascript/blockslider.js"></script>
+<script type="text/javascript" src="https://campusmoodle.rgu.ac.uk/lib/javascript.php/1675777632/theme/fordson/javascript/cardimg.js"></script>
+<script type="text/javascript" src="https://campusmoodle.rgu.ac.uk/lib/javascript.php/1675777632/theme/fordson/javascript_rgu/persistent_menu.js"></script>
+<script type="text/javascript" src="https://campusmoodle.rgu.ac.uk/lib/javascript.php/1675777632/theme/fordson/javascript/courseblock.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","ok":"OK","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"MathJax.Hub.Config({\r\n    config: [\"Accessible.js\", \"Safe.js\"],\r\n    errorSettings: { message: [\"!\"] },\r\n    skipStartupTypeset: true,\r\n    messageStyle: \"none\"\r\n});\r\n","lang":"en"});
+});
+Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random63ecaa865a63413'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63ecaa865a63413'); });
+})();
+//]]>
+</script>
+
+    
+            
+			<script type="text/javascript">
+  				var _gaq = _gaq || [];
+  				_gaq.push(['_setAccount','MO-24562687-1']);
+ 				_gaq.push(['_trackPageview']);
+ 				(function() {
+    					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : '//www') + '.google-analytics.com/ga.js';
+    					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ 				 })();
+			</script>
+				
+    
+    
+        </div>
+    <div class="rgu_release"> 
+    	 
+    </div>
+    
+    
+    
+    </footer>
+
+</div>
+
+<a href="#" id="back-to-top" class="btn btn-primary btn-lg" role="button" title="Back to Top and Scrollspy"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+
+</body>
+</html>
